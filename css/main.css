@@ -11225,3 +11225,14 @@ body.is-cursor-active * {
 a:hover {
     color: #ff836e !important;
 }
+
+.cardImage__image {
+  position: relative;
+}
+
+.cardImage__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
