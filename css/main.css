@@ -11166,9 +11166,17 @@ body.is-cursor-active * {
   position: relative;
   z-index: 4;
 }
-
+.text__mobile {
+  display: none;
+}
 /* Mobile fallback: hide iframe and use poster image (reduce data / avoid autoplay issues) */
 @media (max-width: 900px) {
+  .text__mobile {
+    display: block;
+    margin-bottom: 50px;
+position: relative;
+top: -30px;
+  }
   .hero.durrah_ {
     height: 50vh;
   }
