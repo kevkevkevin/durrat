@@ -11170,7 +11170,7 @@ body.is-cursor-active * {
 /* Mobile fallback: hide iframe and use poster image (reduce data / avoid autoplay issues) */
 @media (max-width: 900px) {
   .hero__bg.video-bg {
-    background-image: url("img/hero/1.png"); /* replace with your preferred poster */
+    background-image: url("../img/hero/1.png"); /* replace with your preferred poster */
     background-size: cover;
     background-position: center;
   }
