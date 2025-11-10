@@ -11169,35 +11169,20 @@ body.is-cursor-active * {
 
 /* Mobile fallback: hide iframe and use poster image (reduce data / avoid autoplay issues) */
 @media (max-width: 900px) {
+  .hero.durrah_ {
+    height: 50vh;
+  }
   .hero__bg.video-bg {
+    /*background-image: url("../img/durrat3.jpg");  replace with your preferred poster */
     background-size: cover;
     background-position: center;
   }
   .video-iframe { 
-    display: block !important;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    min-height: 1080px;
+    position: relative;
+    top: -45% !important;
+    left: 0; 
   }
-}
-
-/* Desktop video sizing */
-.video-iframe { 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  pointer-events: none;
 }
 
 /* If you want the video to be slightly bigger to avoid black bars on certain ratios */
