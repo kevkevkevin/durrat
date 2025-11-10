@@ -2728,24 +2728,32 @@ points.forEach(point => {
     points.forEach(p => p.classList.remove('active'));
     point.classList.add('active');
 
-    // update text + image in panel
+    // update text + image + contact info in panel
     info.innerHTML = `
       <img src="${point.dataset.img}" alt="${point.dataset.title}">
       <h2>${point.dataset.title}</h2>
       <p>${point.dataset.text}</p>
+
+      <div class="contact-info">
+        <p><strong>Phone:</strong> ${point.dataset.phone || 'N/A'}</p>
+        <p><strong>Email:</strong> <a href="mailto:${point.dataset.email}">${point.dataset.email || 'N/A'}</a></p>
+        <p><strong>Website:</strong> <a href="${point.dataset.website}" target="_blank">${point.dataset.website || 'N/A'}</a></p>
+      </div>
+
       <button id="exploreBtn">Explore ${point.dataset.title}</button>
     `;
 
     // make the button functional
     const exploreBtn = document.getElementById('exploreBtn');
     exploreBtn.addEventListener('click', () => {
-      // External link
-      window.open(point.dataset.link, '_blank'); // opens in a new tab
-
-      // OR internal link
-      // window.location.href = point.dataset.link; // navigates in same tab
+      // External link (open in new tab)
+      window.open(point.dataset.link, '_blank');
+      
+      // OR internal link (open in same tab)
+      // window.location.href = point.dataset.link;
     });
   });
 });
+
 
 })();

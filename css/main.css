@@ -8934,6 +8934,9 @@ body.is-cursor-active * {
   }
 }
 
+
+
+
 .bg-white {
   background-color: var(--color-white) !important;
 }
@@ -8951,7 +8954,7 @@ body.is-cursor-active * {
 }
 
 .bg-accent-2 {
-  background-color: var(--color-accent-2) !important;
+  background-color: #ff836e !important;
 }
 
 .bg-light-1 {
@@ -11114,4 +11117,111 @@ body.is-cursor-active * {
   100% {
     transform: translateX(-50%);
   }
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+.hero__slider,
+.hero__slider .swiper-wrapper,
+.hero__slider .swiper-slide {
+  height: 100vh; /* make hero full viewport height */
+}
+.hero__content { position: relative; z-index: 3; height: 100%; display: flex; align-items: center; justify-content: center; }
+
+/* video bg container */
+.hero__bg.video-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  background: #000 center/cover no-repeat;
+}
+
+/* optional overlay so text is readable */
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1;
+}
+
+/* iframe scaled to behave like background-cover */
+.video-iframe {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  pointer-events: none; /* prevents capturing clicks; remove if you need interaction */
+}
+
+/* make sure hero content (texts/buttons) are above video */
+.hero__content .container,
+.hero__content .hero__subtitle,
+.hero__content .hero__title {
+  position: relative;
+  z-index: 4;
+}
+
+/* Mobile fallback: hide iframe and use poster image (reduce data / avoid autoplay issues) */
+@media (max-width: 900px) {
+  .hero__bg.video-bg {
+    background-image: url("img/hero/1.png"); /* replace with your preferred poster */
+    background-size: cover;
+    background-position: center;
+  }
+  .video-iframe { display: none; }
+}
+
+/* If you want the video to be slightly bigger to avoid black bars on certain ratios */
+.video-iframe { min-width: 100%;
+    min-height: 1080px;
+    position: relative;
+    top: -15%; }
+/* ...existing code... */
+
+.scroll-explore-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+.scroll-explore-btn {
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+  pointer-events: auto;
+  transition: background 0.2s;
+}
+.scroll-explore-btn:hover {
+  background: rgba(0,0,0,0.7);
+}
+.scroll-arrow {
+  font-size: 22px;
+  animation: scrollArrowBounce 1.2s infinite;
+  display: inline-block;
+}
+@keyframes scrollArrowBounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(8px);}
+}
+
+a:hover {
+    color: #ff836e !important;
 }
