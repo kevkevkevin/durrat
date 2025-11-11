@@ -2097,7 +2097,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 575px) {
   .header__logo img {
-    height: 32px;
+    height: auto;
+    width: 100px;
   }
 }
 
@@ -11174,11 +11175,8 @@ body.is-cursor-active * {
   .text__mobile {
     display: block;
     margin-bottom: 50px;
-position: relative;
-top: -30px;
-  }
-  .hero.durrah_ {
-    height: 50vh;
+    position: relative;
+    top: -30px;
   }
   .hero__bg.video-bg {
     /*background-image: url("../img/durrat3.jpg");  replace with your preferred poster */
@@ -11188,16 +11186,17 @@ top: -30px;
   .video-iframe { 
     min-height: 1080px;
     position: relative;
-    top: -45% !important;
+    top: 0;
     left: 0; 
   }
 }
 
 /* If you want the video to be slightly bigger to avoid black bars on certain ratios */
 .video-iframe { min-width: 100%;
-    min-height: 1080px;
+    min-height: 100vh;
+    height: 100vh;
     position: relative;
-    top: -15%; }
+    top: 0%; }
 /* ...existing code... */
 
 .scroll-explore-container {

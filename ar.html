@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" type="image/x-icon" href="https://durratalarous.com/img/favicon.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/vendors.css">
@@ -77,10 +80,14 @@
       justify-content: flex-end; 
       padding-bottom: 4rem; 
     }
+
+    h1,h2,h3,h4,h5,h6,span,a,p,div {
+      font-family: 'Tajawal', sans-serif !important;
+    }
   </style>
 </head>
 
-<body>
+<body style="font-family: 'Tajawal', sans-serif !important;">
   <div class="menuFullScreen js-menuFullScreen">
     <div class="menuFullScreen__topMobile js-menuFullScreen-topMobile">
       <div class="d-flex items-center text-white js-menuFullScreen-toggle">
@@ -92,8 +99,8 @@
         <img src="https://durratalarous.com/img/durratalarousWhiteLogo.png" width="150"  alt="logo">
       </div>
 
-      <a href="./ar.html"><button class="button text-white mr-30 lg:mr-0">
-        AR
+      <a href="./index.html"><button class="button text-white mr-30 lg:mr-0">
+        EN
       </button></a>
     </div>
 
@@ -109,20 +116,20 @@
           <span></span>
           <span></span>
         </span>
-        CLOSE
+        إغلاق
       </button>
 
       <div class="menuFullScreen-links js-menuFullScreen-links">
 
         <div class="menuFullScreen-links__item">
-          <a href="./">
-            Home
+          <a href="./" style="direction: rtl;">
+            الصفحة الرئيسية
           </a>
         </div>
 
         <div class="menuFullScreen-links__item">
-          <a href="./#explore">
-            About Us
+          <a href="./#explore" style="direction: rtl;">
+            من نحن
           </a>
         </div>
 
@@ -133,8 +140,8 @@
         </div> -->
 
         <div class="menuFullScreen-links__item">
-          <a href="mailto:sm@durrah.sa">
-            Contact
+          <a href="mailto:sm@durrah.sa" style="direction: rtl;">
+            اتصل بنا
           </a>
         </div>
       </div>
@@ -148,7 +155,7 @@
 
         <div class="mt-40">
           <div class="text-30 text-sec fw-500">
-            Location
+            الموقع
           </div>
           <div class="mt-10">
             Durrat Al Arous, Dhaban, Saudi Arabia
@@ -157,7 +164,7 @@
 
         <div class="mt-40">
           <div class="text-30 text-sec fw-500">
-            Connect With Us
+            تواصل معنا
           </div>
           <div class="mt-10">
             <div>
@@ -209,7 +216,7 @@
   <main>
 
 
-    <header class="header -mx-60 js-header" data-add-bg="bg-accent-1" data-x="header" data-x-toggle="-is-menu-opened" data-anim="fade delay-3">
+    <header class="header -mx-60 js-header" data-add-bg="bg-accent-1" data-x="header" data-x-toggle="-is-menu-opened" data-anim="fade delay-3" style="direction: rtl;">
       <div class="header__container py-60 lg:py-40 md:py-25 items-center">
         <div class="header__left d-flex items-center">
           <div class="items-center d-none lg:d-flex js-menuFullScreen-toggle">
@@ -220,7 +227,7 @@
           <div class="d-flex items-center text-white lg:d-none">
             <i class="icon-map text-20 mr-10"></i>
             <a class="d-block text-15  lh-17 color__" href="https://www.google.com/maps/place/Durrat+Al-Arus+23851/@21.9499131,38.9490569,15z/data=!4m20!1m13!4m12!1m4!2m2!1d39.1217152!2d21.6465408!4e1!1m6!1m2!1s0x15c142f26946d4cf:0xa6d9cfc4deb28c1b!2zRHVycmF0IGFsYXJvc9iMINiv2LHYqSDYp9mE2LnYsdmI2LMsIERhaGFiYW7igK0!2m2!1d38.9633332!2d21.9497652!3m5!1s0x15c142faf480f00f:0x9fe23ebf51e27d7f!8m2!3d21.9498939!4d38.9593566!16zL20vMGZuMjE4?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D" target="_blank">
-                    Durrat Al Arous, Dhaban, Saudi Arabia
+                    درة العروس، ذهبان، المملكة العربية السعودية
             </a>
           </div>
         </div>
@@ -233,12 +240,14 @@
 
         <div class="header__right d-flex items-center h-full">
           <div class="d-flex items-center mr-20 xl:d-none">
-            <i class="icon-phone text-20 text-white mr-30"></i>
-            <div class="text-15 uppercase text-white">+966 56 000 6524</div>
+            <div class="text-15 uppercase text-white" style="direction: ltr;">+966 56 000 6524</div>
+            <i class="icon-phone text-20 text-white mr-10"></i>
           </div>
 
-          <a href="./ar.html"><button class="button text-white mr-30 lg:mr-0">
-            AR
+          <a href="./index.html"style="
+    margin-left: 30px;
+"><button class="button text-white mr-30 lg:mr-0">
+            EN
         </button></a>
 
           <div class="flex-center size-60 rounded-full bg-accent-2 lg:d-none js-menuFullScreen-toggle">
@@ -269,8 +278,8 @@
                 </iframe>
               </div>
                 <div class="scroll-explore-container">
-                    <a href="#explore" class="scroll-explore-btn">
-                    <span>Scroll to Explore</span>
+                    <a href="#explore" class="scroll-explore-btn" style="direction: rtl;">
+                    <span>قم بالتمرير لاكتشاف المزيد</span>
                     <span class="scroll-arrow">&#8595;</span>
                     </a>
                 </div>
@@ -319,8 +328,8 @@
           <div class="row justify-center text-center">
             <div class="col-xl-10 col-lg-11">
               <div data-split='lines' data-anim-child="split-lines delay-2">
-                <h2 class="text-64 md:text-40">
-                  Experience the charm of Durrat Al Arous, where the Red Sea sparkles along endless sandy beaches and sea side walks.
+                <h2 class="text-64 md:text-40" style="direction: rtl;">
+                  اختبر سحر درة العروس، حيث يتلألأ البحر الأحمر على امتداد الشواطئ الرملية الطويلة والممرات البحرية الجميلة.
                 </h2>
               </div>
             </div>
@@ -331,12 +340,15 @@
 
     <section class="layout-pt-lg" id="explore">
        <div class="container_">
-            <div class="info-panel" id="info">
-            <h2>Durrat Alarous</h2>
-            <p>Just an hour north of Jeddah, Durrat Alarous offers a self-contained beachside experience on the Red Sea. With its calm, turquoise waters and white-sand shores, this private resort is beloved for its marina views, waterfront villas, and laid-back atmosphere.<br><br>
-            Families and groups come for the space and serenity—whether it’s lounging poolside, grilling on the terrace, or enjoying water activities like banana boats and jet skiing. The boardwalk and green paths are perfect for cycling or taking sunset walks surrounded by sea breeze and swaying palms.
+            <div class="info-panel" id="info" style="
+                direction: rtl;
+                text-align: right;
+                ">
+            <h2> درة العروس</h2>
+            <p>على بعد ساعة واحدة فقط شمال جدة، تقدّم درة العروس تجربة شاطئية متكاملة على ساحل البحر الأحمر. بمياهها الفيروزية الهادئة ورمالها البيضاء، يُعتبر هذا المنتجع الخاص وجهة محبوبة لمشاهدة المرسى، والاستمتاع بالفلل المطلة على البحر، والأجواء الهادئة والمريحة.<br><br>
+            تأتي العائلات والمجموعات للتمتع بالمساحة والهدوء - سواء كان ذلك بالاسترخاء بجانب المسبح، أو الشواء على التراس، أو الاستمتاع بالأنشطة المائية مثل جولات البنانا والدبابات البحرية. تعتبر الممرات الخشبية والمسارات الخضراء مثالية لركوب الدراجات أو القيام بنزهات غروب الشمس محاطة بنسيم البحر وأشجار النخيل المتمايلة.
 
-            Whether you’re planning a weekend escape or a longer retreat, Durrat Alarous is your spot for sun, sea, and simplicity—just a short drive from the city.
+            سواء كنت تخطط لرحلة نهاية أسبوع أو ملاذ أطول، فإن درة العروس هي وجهتك للشمس والبحر والبساطة - على بعد مسافة قصيرة بالسيارة من المدينة.
             </p>
             </div>
 
@@ -344,7 +356,13 @@
                 <div class="map-point" 
                     style="top: 13%;left: 80%;" 
                     data-title="Kona" 
-                    data-text="KONA offers flexible options to match your needs: Pay & Play – Enjoy instant access to our water sports and activities with no commitment. Membership – Join as a dedicated member for exclusive access to your favourite sport. Partner Federation Access – If you’re part of an affiliated federation, enjoy special privileges and tailored programs" 
+                    data-text="يقدّم كونا خيارات مرنة لتلبية احتياجاتك:
+
+                        الدفع والاستمتاع – استمتع بالدخول الفوري إلى رياضاتنا وأنشطتنا المائية دون أي التزام.
+
+                        العضوية – انضم كعضو مخصص للحصول على وصول حصري إلى رياضتك المفضلة.
+
+                        الوصول عبر الاتحاد الشريك – إذا كنت عضوًا في اتحاد شريك، استمتع بامتيازات خاصة وبرامج مخصصة." 
                     data-img="https://kona.fra1.cdn.digitaloceanspaces.com/pages/about1.png"
                     data-phone="+966554710500"
                     data-email="info@kona.com.sa"
@@ -355,7 +373,7 @@
                 <div class="map-point" 
                     style="top: 66%;left: 39%;" 
                     data-title="Elite Services" 
-                    data-text="At Elite Services Office, we take care of every detail of your experience in Durrat Al-Arous — whether you are a visitor or an owner — to provide you with peace of mind and the service you deserve." 
+                    data-text="في مكتب خدمات النخبة نعتني بكل تفاصيل تجربتك في درة العروس — سواء كنت زائراً أو مالكاً — لنمنحك راحة البال والخدمة التي تستحقها." 
                     data-img="./img/Elite.jpg"
                     data-phone="+966596003237"
                     data-link="https://maps.app.goo.gl/xMXZUqYtLjkGiJeBA">
@@ -364,7 +382,10 @@
                 <div class="map-point" 
                     style="top: 69%;left: 30%;" 
                     data-title="Durrat Alarous Marina" 
-                    data-text="Nestled along the Red Sea coast just north of Jeddah, Durrat Al Arous (“Pearl of the Bride”) is a resort‑style beach‑town development. Within it, the marina serves as a scenic and social focal point—where waterfront views, yachts, and cafés converge." 
+                    data-text="يوفر مرسى درة العروس مرافق متكاملة لعشّاق البحر، تشمل تأجير مواقف للزوارق واليخوت والجت سكي، إضافةً إلى ورشة صيانة متطورة مجهّزة بأحدث التقنيات لتلبية جميع احتياجاتكم البحرية.
+
+يتميّز المرسى بموقعه الفريد داخل الدرة، محاطًا بمجموعة من المتاجر والمطاعم والمقاهي التي تضيف لمسة من الراحة والرفاهية لتجربتكم. كما تنتشر حوله محلات المستلزمات البحرية والخدمات المساندة، لتجعل من زيارتكم تجربة شاملة تجمع بين المتعة، الفخامة، والسهولة في آنٍ واحد.
+" 
                     data-img="https://amam.sa/wp-content/uploads/2024/05/durratalarous-3-898x562.jpg"
                     data-link="https://maps.app.goo.gl/BK2QDLQ5cpvCQvye7">
                 </div>
@@ -372,8 +393,9 @@
                 <div class="map-point" 
                     style="top: 92%;left: 27%;" 
                     data-title="Almukhmal Beach" 
-                    data-text="Al Makhmal Beach is located on Golden Beach Island within Durrat Al-Arous. It is distinguished by its open view of the sea and breathtaking sunsets. Designed to evoke the warm ambiance of a traditional “seaside home,” it offers an ideal setting for relaxation and complete privacy.
-                    The beach features a shaded play area for children and combines tranquility with natural beauty to provide families with an unforgettable experience." 
+                    data-text="يقع شاطئ المخمل في جزيرة الشاطئ الذهبي داخل درة العروس، ويتميز بإطلالته المفتوحة على البحر وغروب الشمس الخلاب، صُمم ليستحضر أجواء “البيت البحري” الدافئ، ويوفر بيئة مثالية للاسترخاء والخصوصية الكاملة.
+يضم الشاطئ منطقة ألعاب مظللة للأطفال، ويجمع بين الهدوء والجمال الطبيعي ليمنح العائلة إقامة لا تُنسى.
+" 
                     data-img="./img/almukmal.jpeg"
                     data-phone="+920007098"
                     data-email="info@almukmalbeach.com"
@@ -384,7 +406,7 @@
                 <div class="map-point" 
                     style="top: 75%;left: 42%;" 
                     data-title="Durrah Beach Resort" 
-                    data-text="The accommodation within Durrat Al Arous takes the form of resort villas, beachfront chalets and hotel‑style rooms inside the development. Many are directly on or very near the Red Sea shoreline, so you’re able to combine sea views, private beach access and resort amenities." 
+                    data-text="يقع منتجع شاطئ الدرة في قلب درة العروس، ويضم أكثر من 30 وحدة سكنية مؤثثة بإطلالة مباشرة على البحر، يمزج بين خصوصية الشقق الفندقية والخدمات المتكاملة من استقبال ونظافة على مدار الساعة. وجهة مثالية للعائلات الباحثة عن إقامة مريحة تجمع بين الهدوء، والأمان، والأنشطة البحرية الممتعة." 
                     data-img="https://mabet.b-cdn.net/units/thumbnails/image-picker-6fe08f1c-94af-40ba-8477-68ad9c7e3a50-61435-000021ba86ae0cc1jpg-2918.jpg"
                     data-phone="+966560006524"
                     data-link="https://maps.app.goo.gl/bTg9mHXR6kgrERkS8">
@@ -393,7 +415,7 @@
                 <div class="map-point" 
                     style="top: 74%;left: 38%;" 
                     data-title="Durrat Alarous Shades" 
-                    data-text="Shades Beach is a premium beach club destination at Durrat Al Arous, positioned about 40 km north of central Jeddah. It provides a curated seaside experience blending leisure, club‑style amenities, and resort aesthetic." 
+                    data-text="Shades هو وجهة عائلية راقية على السواحل الخلابة لدرة العروس، يقدم تجربة شاطئية متكاملة تجمع بين الخصوصية والرفاهية والخدمة المتميزة. يتميّز بفعالياته المتجددة على مدار العام التي تجمع الموسيقى، والأنشطة، والإطلالات البحرية الساحرة." 
                     data-img="https://cf.bstatic.com/xdata/images/hotel/max1024x768/729539571.jpg?k=a73d0b3aeb9a89f0aa2581b80daed0a54f1bac5b58b2e92e160945f6aa0bed02&o="
                     data-phone="+966549028080"
                     data-email="info@shadesbeach.com"
@@ -404,9 +426,9 @@
                 <div class="map-point" 
                     style="top: 64%;left: 31%;" 
                     data-title="17Sixty" 
-                    data-text="17Sixty offers a range of marine experiences on the shores of Durrat Al-Arous, combining adventure and fun — from jet skis and amphibious car rides to island cruises and the unique shark cage experience.
-
-                    Supervised by a team of local and international water sports experts, 17Sixty is committed to the highest standards of safety and sustainability, delivering world-class recreational experiences that embody the spirit of the “Saudi Riviera” and support the goals of Vision 2030 in developing the tourism and marine sectors." 
+                    data-text="تقدّم 17Sixty على شواطئ درة العروس مجموعة من التجارب البحرية التي تجمع بين المغامرة والمتعة. ابتداءا من الدبابات البحرية وركوب السيارة البرمائية وصولا إلى الرحلات البحرية إلى الجزر وتجربة قفص أسماك القرش الفريدة.
+بإشراف فريق من خبراء الرياضات المائية المحليين والعالميين، تلتزم  17Sixtyبأعلى معايير السلامة والاستدامة لتقديم تجارب ترفيهية بمعايير عالمية تعكس روح “الريڤييرا السعودية” وتدعم أهداف رؤية 2030 في تنمية قطاع السياحة والبحر.
+" 
                     data-img="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/570817383.jpg?k=f79282f8dfc317256424114f0be84fd90cae5907204fc99f047fcb312e8fd99f&o=&s=1024x"
                     data-phone="+ 9200 33700"
                     data-email="inquiry@17sixty.com"
@@ -417,7 +439,7 @@
                 <div class="map-point" 
                     style="top: 51%;left: 74%;" 
                     data-title="Durrat Alarous Luna" 
-                    data-text="Durrat Alarous Luna beach likely refers to Moon Beach, a section of the larger Durrat Alarous resort area in Jeddah, Saudi Arabia, which is a private-style beach resort known for its chalets and beach activities." 
+                    data-text="يشير شاطئ درة العروس لونا على الأرجح إلى شاطئ القمر، وهو جزء من منطقة منتجع درة العروس الأكبر في جدة، المملكة العربية السعودية، والذي يُعرف بأنه منتجع شاطئي بأسلوب خاص يتميز بشاليه وأنشطة شاطئية." 
                     data-img="https://www.timeoutjeddah.com/cloud/timeoutjeddah/2024/06/19/Shades-Beach-14.jpg"
                     data-link="https://maps.app.goo.gl/bTg9mHXR6kgrERkS8">
                 </div>
@@ -437,16 +459,16 @@
             </div>
 
             <div class="cardImage__content text-center">
-              <div class="cardImage__subtitle text-white mb-30 md:mb-20">EXPERIENCES</div>
-              <h3 class="cardImage__title text-52 lg:text-40 text-white">Water<br> Sports</h3>
+              <div class="cardImage__subtitle text-white mb-30 md:mb-20">التجارب</div>
+              <h3 class="cardImage__title text-52 lg:text-40 text-white" style="direction: rtl;">الرياضات المائية</h3>
 
-              <p class="cardImage__text text-white mt-40 md:mt-20">
-               From jet skiing to banana rides, dive into adventure and feel the thrill of the Red Sea.
+              <p class="cardImage__text text-white mt-40 md:mt-20" style="direction: rtl;">
+               من الدبابات البحرية إلى جولات البنانا، انغمس في المغامرة واستمتع بإثارة البحر الأحمر.
               </p>
 
               <div class="cardImage__button">
                 <button class="button -md -type-2 col-12 -outline-white text-white rounded-200 mt-50 md:mt-30">
-                  <a href="https://amam.sa/ar/durrat-al-arous">DISCOVER MORE</a>
+                  <a href="https://amam.sa/ar/durrat-al-arous" style="direction: rtl;">اكتشف المزيد</a>
                 </button>
               </div>
             </div>
@@ -461,16 +483,16 @@
             </div>
 
             <div class="cardImage__content text-center">
-              <div class="cardImage__subtitle text-white mb-30 md:mb-20">EXPERIENCES</div>
-              <h3 class="cardImage__title text-52 lg:text-40 text-white">Scuba<br> Diving</h3>
+              <div class="cardImage__subtitle text-white mb-30 md:mb-20">التجارب</div>
+              <h3 class="cardImage__title text-52 lg:text-40 text-white" style="direction: rtl;">الغوص تحت الماء</h3>
 
-              <p class="cardImage__text text-white mt-40 md:mt-20">
-                Discover the underwater beauty of coral reefs and marine life beneath the crystal-clear waters.
+              <p class="cardImage__text text-white mt-40 md:mt-20" style="direction: rtl;">
+                اكتشف جمال الشعاب المرجانية والحياة البحرية تحت مياه البحر الصافية.
               </p>
 
               <div class="cardImage__button">
                 <button class="button -md -type-2 col-12 -outline-white text-white rounded-200 mt-50 md:mt-30">
-                  <a href="https://17sixty.com/">DISCOVER MORE</a>
+                  <a href="https://17sixty.com/" style="direction: rtl;">اكتشف المزيد</a>
                 </button>
               </div>
             </div>
@@ -485,16 +507,16 @@
             </div>
 
             <div class="cardImage__content text-center">
-              <div class="cardImage__subtitle text-white mb-30 md:mb-20">EXPERIENCES</div>
-              <h3 class="cardImage__title text-52 lg:text-40 text-white">Beach<br> Activities</h3>
+              <div class="cardImage__subtitle text-white mb-30 md:mb-20" style="direction: rtl;">التجارب</div>
+              <h3 class="cardImage__title text-52 lg:text-40 text-white" style="direction: rtl;">أنشطة الشاطئ</h3>
 
-              <p class="cardImage__text text-white mt-40 md:mt-20">
-                Relax, play, and connect — enjoy volleyball, sunbathing, or a peaceful walk along the shore.
+              <p class="cardImage__text text-white mt-40 md:mt-20" style="direction: rtl;">
+                استرخِ، والعب، وتواصل — استمتع بلعب الكرة الطائرة، أو بالاستلقاء تحت أشعة الشمس، أو بنزهة هادئة على طول الشاطئ.
               </p>
 
-              <div class="cardImage__button">
+              <div class="cardImage__button" style="direction: rtl;">
                 <button class="button -md -type-2 col-12 -outline-white text-white rounded-200 mt-50 md:mt-30">
-                  <a href="https://shadesbeach.com/">DISCOVER MORE</a>
+                  <a href="https://shadesbeach.com/" style="direction: rtl;">اكتشف المزيد</a>
                 </button>
               </div>
             </div>
@@ -507,7 +529,7 @@
       <div class="row justify-center text-center">
         <div data-anim-child="slide-up delay-1" class="col-auto">
           <div class="text-15 uppercase mb-30 sm:mb-10"><a href="https://www.instagram.com/d.alarous/" target="_blank"> @d.alarous</a></div>
-          <h2 class="text-64 md:text-40">Follow us on Instagram</h2>
+          <h2 class="text-64 md:text-40" style="direction: rtl;">تابعنا على إنستغرام</h2>
         </div>
       </div>
 
@@ -613,4 +635,4 @@
   <script src="js/main.js"></script>
 </body>
 
-</html>
+</html>a
